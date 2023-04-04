@@ -17,8 +17,14 @@ class MyApp extends StatelessWidget{
         centerTitle: true,
           backgroundColor: Colors.indigo[300],
         ),
-        body: Center(
-          child: Icon(Icons.pets,size: 60,color: Colors.indigo[300],),
+        body:Center(
+          child: Image(
+            image: AssetImage('assets/doginspace.png')
+            // NetworkImage('https://resizer.mail.ru/p/8c93f1f1-a067-51ea-bd75-a301fc0f2c20/AQAOujhWsXWikFh1zLCoxwuC4VswEFMIAobnawgesw-1sPa7MOFxlP0m_sNFOMh94QSK3eSi5djHtiy_NIqMv-Z3Gjc.jpg'),
+          )
+          // ElevatedButton.icon(onPressed: (){},label: Text('Click here'),icon:Icon(Icons.pets_sharp))
+          // FlatButton(onPressed:(){},child:Text('Click here'))
+          // Icon(Icons.pets,size: 60,color: Colors.indigo[300],),
         ),
         floatingActionButton: FloatingActionButton(
           child: Text('Start'),
@@ -32,3 +38,4 @@ class MyApp extends StatelessWidget{
   }
 
 }
+
